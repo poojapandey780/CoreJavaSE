@@ -1,0 +1,45 @@
+Collection(Interface) --> 
+    -list(Ordered, allows duplicates)
+        -ArrayList 
+            -Grows dynamically (usually 50% more when full)
+            -fast
+            -insert/delete -slow
+        -LinkedList
+            -slow
+            -insert/delete -fast
+    -set(No duplicates)- only unique value
+        -HashSet
+            - No order
+            -fastest
+            -only one null allowed
+            -hash table
+        -LinkedHashSet
+            -insertion order
+            -slower
+            -allow one null
+            -hash table + linked list
+        -TreeSet
+            -sorted order
+            -slowest
+            -sorted 
+    -queue(FIFO structure)
+        -PriorityQueue
+        -LinkedList
+
+    
+Map (not Collection) -->  Key-value pairs
+        -HashMap
+        -TreeMap
+        -LinkedHashMap
+
+
+
+        when and why we used ArrayList and Arrays.toList
+        -ArrayList:  
+            mutable, resizable list (add, remove, update).
+            ideal for dynamic data
+        -Arrays.toList:
+            quickly convert an array to a list.
+            don’t need to add/remove elements.
+            Lightweight and fast.
+
