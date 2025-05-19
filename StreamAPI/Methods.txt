@@ -1,0 +1,18 @@
+map(function<R>) -> one to one
+flatMap(function Stream<R>) -> one to many
+MapToInt() ->Converts elements to int (primitive). -allow methods -max(),min(),average(),sum().
+MapToDouble() ->Converts elements to double (primitive). -allow methods
+
+
+
+collectors -> that provides reduction operations
+ (like collecting results into a List, Set, Map, or a joined String, etc.).
+
+
+ Collectors.joining() – Join Strings -It combines all stream elements into a single String.
+
+
+ filter() removes elements that don't match a given predicate (boolean condition).
+
+
+ Combine filter() + joining()  -eg. Join only names that start with A
